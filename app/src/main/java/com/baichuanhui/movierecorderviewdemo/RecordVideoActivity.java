@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class RecordVideoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recordvideo);
         mRecorderView = (MovieRecorderView) findViewById(R.id.movieRecorderView);
         mShootBtn = (Button) findViewById(R.id.shoot_button);
+        Log.i("tag", "onCreate: ");
 
         //用户长按事件监听
         mShootBtn.setOnTouchListener(new View.OnTouchListener() {
