@@ -29,6 +29,7 @@ public class RecordVideoActivity extends AppCompatActivity {
         mShootBtn = (Button) findViewById(R.id.shoot_button);
         Log.i("tag", "onCreate: ");
 
+        Log.i("tag", "onCreate: ");
         //用户长按事件监听
         mShootBtn.setOnTouchListener(new View.OnTouchListener() {
 
